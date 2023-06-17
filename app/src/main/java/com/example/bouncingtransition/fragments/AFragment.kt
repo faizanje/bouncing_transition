@@ -1,5 +1,6 @@
 package com.example.bouncingtransition.fragments
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -7,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.bouncingtransition.R
+import com.example.bouncingtransition.activities.FirstActivity
 import com.example.bouncingtransition.databinding.FragmentABinding
 
 class AFragment : Fragment() {
@@ -22,6 +24,11 @@ class AFragment : Fragment() {
         binding.button.setOnClickListener{
             findNavController().navigate(R.id.action_AFragment_to_BFragment)
         }
+
+        binding.btnActivity.setOnClickListener{
+            startActivity(Intent(requireActivity(),FirstActivity::class.java))
+        }
+
 
         return binding.root;
     }

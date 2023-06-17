@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/red"
+    android:background="@color/purple"
     android:orientation="vertical"
     android:layout_gravity="center"
     android:gravity="center"
-    tools:context=".fragments.AFragment"
-    >
-
+    tools:context=".activities.FirstActivity">
 
     <Button
         android:layout_gravity="center"
         android:id="@+id/button"
-        android:text="Fragment Push"
+        android:text="Activity Push"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
     <Button
-        android:text="Activity Animations"
         android:layout_gravity="center"
-        android:id="@+id/btnActivity"
+        android:id="@+id/btnFragment"
+        android:text="Fragment Animations"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
+
 
 </LinearLayout>
