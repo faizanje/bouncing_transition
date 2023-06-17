@@ -11,10 +11,10 @@
         android:label="fragment_a"
         tools:layout="@layout/fragment_a" >
         <action
-            app:popEnterAnim="@anim/slide_pop_enter"
-            app:popExitAnim="@anim/slide_pop_exit"
-            app:enterAnim="@anim/slide_enter"
-            app:exitAnim="@anim/slide_exit"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
             android:id="@+id/action_AFragment_to_BFragment"
             app:destination="@id/BFragment" />
     </fragment>
@@ -23,10 +23,5 @@
         android:name="com.example.bouncingtransition.fragments.BFragment"
         android:label="fragment_b"
         tools:layout="@layout/fragment_b" >
-    <action
-        app:enterAnim="@anim/slide_enter"
-        app:exitAnim="@anim/slide_exit"
-        android:id="@+id/action_AFragment_to_BFragment"
-        app:destination="@id/BFragment" />
     </fragment>
 </navigation>
